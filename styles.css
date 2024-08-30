@@ -1,0 +1,316 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    background-color: #252e1e;
+    color: #f0f0f5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #e8f0d1;
+    color: #f0f0f5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header i {
+    font-size: 3rem;
+    color: #5a9ace;
+    margin-bottom: 20px;
+}
+
+header .site-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #42a5f5;
+    margin-left: -35%;
+}
+
+header .site-name:hover {
+    font-weight: bold;
+    color: #df711c;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #f0f0f5;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 30px;
+}
+
+header nav ul li a:hover {
+    background-color: #5a21c4;
+    color: #1e1e2e;
+}
+
+.search-filter {
+    background-color: #28293d;
+    padding: 40px;
+    text-align: center;
+}
+
+.search-filter h2 {
+    color: #42a5f5;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.search-filter form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.search-filter label {
+    font-size: 1rem;
+    color: #f0f0f5;
+}
+
+.search-filter input[type="text"],
+.search-filter input[type="range"],
+.search-filter select {
+    padding: 10px;
+    border: 1px solid #42a5f5;
+    border-radius: 5px;
+    background-color: #1e1e2e;
+    color: #f0f0f5;
+}
+
+.search-filter button {
+    padding: 10px 20px;
+    background-color: #42a5f5;
+    color: #1e1e2e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-filter button:hover {
+    background-color: #1e1e2e;
+    color: #42a5f5;
+    transform: translateY(-5px);
+    border: 2px solid #42a5f5;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: #1e1e2e;
+    text-align: center;
+}
+
+.features .feature-item {
+    flex: 1;
+    padding: 30px;
+    margin: 0 10px;
+    background-color: #28293d;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.features .feature-item i {
+    font-size: 3rem;
+    color: #42a5f5;
+    margin-bottom: 20px;
+}
+
+.features .feature-item:hover {
+    transform: translateY(-10px);
+    background-color: rgba(100, 227, 229, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: #28293d;
+}
+
+.plan-box {
+    flex: 1;
+    background-color: #1e1e2e;
+    padding: 40px;
+    margin: 0 10px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan-box h2 {
+    font-size: 1.8rem;
+    color: #42a5f5;
+    margin-bottom: 20px;
+}
+
+.plan-box p.cost {
+    font-size: 2rem;
+    color: #df711c;
+    margin-bottom: 30px;
+}
+
+.plan-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+}
+
+.plan-box ul li {
+    font-size: 1.2rem;
+    color: #f0f0f5;
+    margin: 10px 0;
+}
+
+.plan-box button {
+    padding: 15px 30px;
+    background-color: #42a5f5;
+    color: #1e1e2e;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.plan-box button:hover {
+    background-color: #1e1e2e;
+    color: #42a5f5;
+    transform: translateY(-5px);
+    border: 2px solid #42a5f5;
+}
+
+.popular {
+    transform: scale(1.1);
+    background-color: rgba(100, 227, 229, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #1e1e2e;
+    color: #f0f0f5;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+footer .social-links {
+    margin-bottom: 20px;
+}
+
+footer .social-links a {
+    font-size: 1.5rem;
+    color: #42a5f5;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #df711c;
+    transform: translateY(-5px);
+}
+
+footer .newsletter-box {
+    margin-bottom: 20px;
+}
+
+footer .newsletter-box input[type="text"] {
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #42a5f5;
+    background-color: #1e1e2e;
+    color: #f0f0f5;
+}
+
+footer .newsletter-box button {
+    padding: 10px 20px;
+    background-color: #42a5f5;
+    color: #1e1e2e;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+footer .newsletter-box button:hover {
+    background-color: #1e1e2e;
+    color: #42a5f5;
+    transform: translateY(-5px);
+    border: 2px solid #42a5f5;
+}
+
+.scroll-top {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #42a5f5;
+    color: #1e1e2e;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-top:hover {
+    background-color: #1e1e2e;
+    color: #42a5f5;
+    transform: translateY(-5px);
+    border: 2px solid #42a5f5;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #42a5f5;
+    color: #1e1e2e;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    opacity: 0.9;
+    transition: transform 0.3s ease-in-out;
+}
+
+.notification:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .features, .pricing {
+        flex-direction: column;
+    }
+
+    .search-filter form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

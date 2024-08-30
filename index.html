@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HouseRent</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Matemasie&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-house fa-5x"></i>
+        <div class="site-name">HouseRent</div>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Reach Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-filter">
+        <h2>Find Your Perfect Home</h2>
+        <form id="searchForm">
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="Enter location">
+
+            <label for="price-range">Price Range:</label>
+            <input type="range" id="price-range" min="1000" max="10000" step="500">
+            <span id="price-range-value">₹5000</span>
+
+            <label for="bedrooms">Bedrooms:</label>
+            <select id="bedrooms">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4+">4+</option>
+            </select>
+
+            <button type="button" id="searchBtn">Search</button>
+        </form>
+    </section>
+
+    <section class="features">
+        <div class="feature-item">
+            <i class="fa-solid fa-handshake fa-sm"></i>
+            <h3>House For Your Family</h3>
+            <p>Choose from a wide range of houses available for rent in various locations.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-shield-alt fa-bounce"></i>
+            <h3>Secured Contracts</h3>
+            <p>All rental agreements are securely managed and legally binding.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-inr"></i>
+            <h3>Affordable Pricing</h3>
+            <p>Find rental options that fit your budget, with transparent pricing.</p>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="plan-box">
+            <h2>Basic</h2>
+            <p class="cost">₹2000/month</p>
+            <ul>
+                <li>Browse Listings</li>
+                <li>Contact Owners</li>
+                <li>Save Favorites</li>
+            </ul>
+            <button>CLICK ME</button>
+        </div>
+        <div class="plan-box popular">
+            <h2>Standard</h2>
+            <p class="cost">₹4000/month</p>
+            <ul>
+                <li>Everything in Basic</li>
+                <li>Premium Listings</li>
+                <li>Priority Support</li>
+            </ul>
+            <button>CLICK ME</button>
+        </div>
+        <div class="plan-box">
+            <h2>Premium</h2>
+            <p class="cost">₹6000/month</p>
+            <ul>
+                <li>Everything in Standard</li>
+                <li>Virtual Tours</li>
+                <li>Personalized Assistance</li>
+            </ul>
+            <button>CLICK ME</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="newsletter-box">
+            <form>
+                <input type="text" placeholder="Enter your contact number">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <button class="scroll-top">Back to Top</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
